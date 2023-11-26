@@ -4,15 +4,15 @@ public class SimpleHamburgerFactory {
     public Hamburger createHamburger(String type){
         Hamburger burger = null;
         //We add types
-        if (type.equals("cheese")) {
+        if ("cheese".equals(type)) {
             burger = new CheeseBurger();
-        } else if (type.equals("greek")) {
+        } else if ("greek".equals(type)) {
             burger = new GreekBurger();
-        } else if (type.equals("meatLover")) {
+        } else if ("meatLover".equals(type)) {
             burger = new MeatLover();
-        } else if (type.equals("veggie")) {
+        } else if ("veggie".equals(type)) {
             burger = new VeggieBurger();
-        } else if (type.equals("bunLess")) {
+        } else if ("bunLess".equals(type)) {
             burger = new BunLessBurger();
         }
 
